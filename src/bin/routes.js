@@ -7,7 +7,7 @@ export default () => {
 
     // V1 routes go here
     router.get('/', (request, response) => {
-        response.send('TO BE DONE');
+        response.send({ message: 'hi' });
     });
     router.get('/V1/ping', v1.getPing);
     router.post('/V1/ping', v1.postPing);
