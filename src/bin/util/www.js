@@ -1,18 +1,16 @@
 import express from 'express';
-import packageJson from '../../../package.json';
-import routesFunc from '../routes';
+import { name } from '../../../package.json';
+import controller from '../default';
+import https from 'https';
+import path from 'path';
 
 // Any express middleware gets set here
-
 export default () => {
     const app = express();
-    const routes = routesFunc();
-    const { name } = packageJson;
-    
     app.use(express.json());
     app.use(express.urlencoded({ extended: false }));
 
-    app.use(`/${name}`, routes);
+    app.use(`/${name}`, controller);
 
-    return app;
-}
+    return https.createServer(app);
+};

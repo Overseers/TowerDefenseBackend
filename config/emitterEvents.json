@@ -1,0 +1,9 @@
+{
+    "chatChannel": {
+        "onChannelEmpty": "onRoomEmpty",
+        "onChannelJoin": "onRoomJoin"
+    },
+    "player": {
+        "chatChannelUpdate": "chatChannelUpdate"
+    }
+}

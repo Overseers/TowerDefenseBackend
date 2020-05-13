@@ -1,0 +1,18 @@
+{
+    "game": {},
+    "chat": {
+        "chatMessage": "chatMessage",
+        "whisper": "-whisper",
+        "whisperStatus": "whisperStatus",
+        "chatChannelUpdate": "chatChannelUpdate"
+    },
+    "global": {
+        "authentication": "authentication",
+        "onAuthFail": "onAuthFail",
+        "onAuthSuccess": "onAuthSuccess",
+        "playerList": "playerList",
+        "socketConnectAck": "socketConnectAck",
+        "disconnect": "disconnect",
+        "serverMessage": "serverMessage"
+    }
+}
